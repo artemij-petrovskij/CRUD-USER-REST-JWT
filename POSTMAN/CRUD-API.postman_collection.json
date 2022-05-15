@@ -1,0 +1,168 @@
+{
+	"info": {
+		"_postman_id": "f5672978-65a1-4195-b81d-d9b177c8caa0",
+		"name": "CRUD-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET USER BY ID",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFubiIsImlhdCI6MTY1MjY1NjE2MCwiZXhwIjoxNjUyNjU3MDYwfQ.BA_h1sluZ_EoS80jcNDOG90WFJtBZHdi0iFA2mijm8I",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE USER BY ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFubiIsImlhdCI6MTY1MjY1NjE2MCwiZXhwIjoxNjUyNjU3MDYwfQ.BA_h1sluZ_EoS80jcNDOG90WFJtBZHdi0iFA2mijm8I",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET ALL USERS",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFubiIsImlhdCI6MTY1MjY1NjE2MCwiZXhwIjoxNjUyNjU3MDYwfQ.BA_h1sluZ_EoS80jcNDOG90WFJtBZHdi0iFA2mijm8I",
+						"type": "default"
+					},
+					{
+						"key": "",
+						"value": "",
+						"type": "default",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://localhost:3000/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE USER BY ID",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFubiIsImlhdCI6MTY1MjY1NjE2MCwiZXhwIjoxNjUyNjU3MDYwfQ.BA_h1sluZ_EoS80jcNDOG90WFJtBZHdi0iFA2mijm8I",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"w\",\r\n    \"password\": \"w,\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/20",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						"20"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE USER",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6Inp6eiIsImlhdCI6MTY1MjY1NzE3MCwiZXhwIjoxNjUyNjU4MDcwfQ.TaXO0-b1qDtcEQI8jM0X9QvjsQTV86yRSRBkNQn_gXY",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"create new 12343\",\r\n    \"password\": \"wasdfasdf,\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
